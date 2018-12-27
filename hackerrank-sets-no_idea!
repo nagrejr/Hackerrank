@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n,m=input().split()
+arr=input().split()
+a=set(input().split())
+b=set(input().split())
+happyness=0
+for i in arr:
+    if i in a:
+        happyness+=1
+    if i in b:
+        happyness-=1
+print(happyness)
